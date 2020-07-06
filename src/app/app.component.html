@@ -1,0 +1,20 @@
+<div>
+  <cnt-flexy-view-viskhan-sbank-header-1_01
+            [categories]='forHeader()'
+            [pathToAssets]='pathToAssets'
+            (clickHeaderLogo)=clicker($event)
+            (clickHeaderHome)=clicker($event)
+            (clickHeaderFeatures)=clicker($event)
+            (clickHeaderHowItWorks)=clicker($event)
+            (clickHeaderAboutUs)=clicker($event)
+            (clickHeaderSignIn)=clicker($event)
+  ></cnt-flexy-view-viskhan-sbank-header-1_01>
+    <router-outlet></router-outlet>
+  <cnt-flexy-view-viskhan-sbank-footer-1_01
+            [categories]='forFooter()'
+            [pathToAssets]='pathToAssets'
+            (clickFooterFacebook)='clicker($event)'
+            (clickFooterIn)='clicker($event)'
+            (clickFooterCopyright)='clicker($event)'
+  ></cnt-flexy-view-viskhan-sbank-footer-1_01>
+</div>
